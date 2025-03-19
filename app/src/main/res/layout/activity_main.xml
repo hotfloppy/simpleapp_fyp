@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <GridLayout
+            android:id="@+id/gridLayoutCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:rowOrderPreserved="false"
+            android:layout_gravity="center">
+
+            <!-- Example Button: Food -->
+            <LinearLayout
+                android:id="@+id/button_food"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/button_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ic_food"
+                    android:contentDescription="Food" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+            <!-- Toilet button -->
+            <LinearLayout
+                android:id="@+id/button_toilet"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/button_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ic_toilet"
+                    android:contentDescription="Toilet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toilet"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+            <!-- Sleep button -->
+            <LinearLayout
+                android:id="@+id/button_sleep"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/button_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ic_sleep"
+                    android:contentDescription="Sleep" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sleep"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+            <!-- Bath button -->
+            <LinearLayout
+                android:id="@+id/button_bath"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/button_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ic_bath"
+                    android:contentDescription="Bath" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bath"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+        </GridLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+            android:contentDescription="Add Custom Button"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="24dp"
+            android:tint="@android:color/white"
+            android:backgroundTint="#A8E6A3"
+            android:alpha="0.3"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</ScrollView>
